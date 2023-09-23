@@ -1,4 +1,5 @@
-package Clube.UsoFuncionario;
+package Clube.AcessoGerente;
+
 import java.util.Scanner;
 
 public class LoguinGerente {

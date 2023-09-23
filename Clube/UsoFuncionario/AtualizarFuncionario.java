@@ -3,6 +3,9 @@ package Clube.UsoFuncionario;
 
 import java.util.Scanner;
 
+import Clube.AcessoGerente.GerenciarFuncionarios;
+import Clube.Classes.Funcionario;
+
 public class AtualizarFuncionario {
     
     public static void atualizarFuncionario(GerenciarFuncionarios gerenciador, Scanner scanner) {
