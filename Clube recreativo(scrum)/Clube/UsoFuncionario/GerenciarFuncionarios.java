@@ -20,6 +20,10 @@ public class GerenciarFuncionarios {
             System.out.println("--------------------");
         }
     }
+
+    public Funcionario buscarFuncionario(String nomeFuncionario) {
+        return null;
+    }
 }
 
 

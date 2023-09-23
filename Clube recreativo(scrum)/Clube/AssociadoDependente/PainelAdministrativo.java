@@ -11,6 +11,7 @@ public class PainelAdministrativo {
     private static List<Associado> associados = new ArrayList<>();
     private static List<Dependente> dependentes = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
+    private static String[] args;
 
     public static void main(String[] args) {
         exibirMenuPrincipal();
@@ -19,9 +20,10 @@ public class PainelAdministrativo {
     private static void exibirMenuPrincipal() {
         while (true) {
             System.out.println("\nMENU PRINCIPAL");
-            System.out.println("1. Listar Associados");
-            System.out.println("2. Visualizar Associado e Dependentes");
-            System.out.println("3. Sair");
+            System.out.println("1. Cadastrar Associados");
+            System.out.println("2. Listar Associados");
+            System.out.println("3. Visualizar Associado e Dependentes");
+            System.out.println("4. Sair");
             System.out.print("Escolha uma opção: ");
 
             int escolha = scanner.nextInt();
@@ -29,12 +31,14 @@ public class PainelAdministrativo {
 
             switch (escolha) {
                 case 1:
+                NovoAssociado.main(args);
+                case 2:
                     listarAssociados();
                     break;
-                case 2:
+                case 3:
                     visualizarAssociado();
                     break;
-                case 3:
+                case 4:
                     System.out.println("Saindo do programa.");
                     return;
                 default:
@@ -70,5 +74,8 @@ public class PainelAdministrativo {
         } else {
             System.out.println("Associação inválida.");
         }
+    }
+
+    public static void acessarPainelAdministrativo(Scanner scanner2) {
     }
 }
