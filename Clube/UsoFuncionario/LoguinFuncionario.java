@@ -14,6 +14,7 @@ public class LoguinFuncionario {
             System.out.println("Escolha a opção:");
             System.out.println("1. Atualizar Funcionário");
             System.out.println("2. Acessar Painel Administrativo");
+            System.out.println("3. Cadastro De  Atividades Do Clube");
             int escolha = Integer.parseInt(scanner.nextLine());
 
             switch (escolha) {
@@ -22,6 +23,9 @@ public class LoguinFuncionario {
                     break;
                 case 2:
                     PainelAdministrativo.acessarPainelAdministrativo(scanner);
+                    break;
+                case 3:
+                    CadastroDeAtividades.cadastrarAtividades(scanner);
                     break;
                 default:
                     System.out.println("Opção inválida.");

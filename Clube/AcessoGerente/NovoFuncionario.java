@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import Clube.Classes.Funcionario;
+import Clube.UsoFuncionario.CadastroDeAtividades;
 
 public class NovoFuncionario {
     private List<Funcionario> funcionarios;
@@ -33,7 +34,8 @@ public class NovoFuncionario {
             System.out.println("Escolha uma opção:");
             System.out.println("1. Criar novo funcionário");
             System.out.println("2. Mostrar lista de funcionários");
-            System.out.println("3. Sair");
+            System.out.println("3. Cadastrar Turmas");
+            System.out.println("4. Sair");
             int escolha = Integer.parseInt(scanner.nextLine());
 
             switch (escolha) {
@@ -45,6 +47,9 @@ public class NovoFuncionario {
                     gerenciador.mostrarFuncionarios();
                     break;
                 case 3:
+                    CadastroDeAtividades.cadastrarAtividades(scanner);
+                    break;
+                case 4:
                     System.out.println("Saindo...");
                     scanner.close();
                     return;
