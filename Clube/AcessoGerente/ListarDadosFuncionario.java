@@ -3,6 +3,7 @@ package Clube.AcessoGerente;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 class ExperienciaProfissional {
     private String empresa;
@@ -116,7 +117,7 @@ class Funcionario {
 }
 
 public class ListarDadosFuncionario  {
-    public static void main(String[] args) {
+    public static void listarDadosFuncionario(String[] args) {
         Funcionario funcionario = new Funcionario("João", "Desenvolvedor");
         funcionario.adicionarExperienciaProfissional("Empresa A", "Analista de Sistemas", "2015-2017");
         funcionario.adicionarTreinamento("Java Certification", "2021");
@@ -125,5 +126,7 @@ public class ListarDadosFuncionario  {
         // Visualizar o resumo das informações do funcionário
         System.out.println(funcionario.obterResumo());
     }
+
+    
 }
 

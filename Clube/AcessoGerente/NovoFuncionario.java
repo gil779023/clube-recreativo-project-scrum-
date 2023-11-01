@@ -35,7 +35,8 @@ public class NovoFuncionario {
             System.out.println("1. Criar novo funcionário");
             System.out.println("2. Mostrar lista de funcionários");
             System.out.println("3. Cadastrar Turmas");
-            System.out.println("4. Sair");
+            System.out.println("4. Listar Dados Dos Funcionarios");
+            System.out.println("5. Sair");
             int escolha = Integer.parseInt(scanner.nextLine());
 
             switch (escolha) {
@@ -50,6 +51,9 @@ public class NovoFuncionario {
                     CadastroDeAtividades.cadastrarAtividades(scanner);
                     break;
                 case 4:
+                    ListarDadosFuncionario.listarDadosFuncionario(args);
+                    break;    
+                case 5:
                     System.out.println("Saindo...");
                     scanner.close();
                     return;
